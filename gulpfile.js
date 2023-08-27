@@ -27,7 +27,7 @@ function pages() {
 }
 
 function fonts() {
-  return src("app/src/fonts")
+  return src("app/src/fonts/*")
     .pipe(
       fonter({
         formats: ["woff", "ttf"],
@@ -125,8 +125,8 @@ function scripts() {
 function scriptsLibs() {
   return (
     src([
-      // "node_modules/jquery/dist/jquery.js",
-      // "node_modules/aos/dist/aos.js",
+      "node_modules/jquery/dist/jquery.js",
+      "node_modules/aos/dist/aos.js",
       // "node_modules/ion-rangeslider/js/ion.rangeSlider.js",
       // "node_modules/jquery-form-styler/dist/jquery.formstyler.js",
       // "node_modules/slick-carousel/slick/slick.js",
@@ -151,8 +151,8 @@ function watching() {
     notify: false,
   });
   watch(["app/src/scss/**/*.scss"], styles);
-  watch(["app/js/src/**/*.js"], scripts);
-  watch(["app/js/libs/**/*.js"], scriptsLibs);
+  watch(["app/src/javascript/src/**/*.js"], scripts);
+  watch(["app/src/javascript/libs/**/*.js"], scriptsLibs);
   watch(["app/src/html/**/*.html"], pages);
   watch(["app/src/fonts/**/*.*"], fonts);
   watch(["app/src/images"], series(imagesAll, imagesAvif, imagesWebp));

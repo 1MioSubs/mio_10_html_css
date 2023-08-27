@@ -33,19 +33,36 @@ body {
 
 body {
   color: $default;
-  font-size: 20px;
+  font-size: 16px;
   line-height: normal;
-  @extend %roboto-400;
+  @extend %ws-400;
   display: flex;
   flex-direction: column;
+  line-height: 140%; /* 22.4px */
 }
 
 .main {
   flex-grow: 1;
 }
 
-.container {
-  max-width: 1440px;
+.container__header {
+  max-width: 1460px;
   margin: 0 auto;
-  // padding: 0 10px;
+  padding: 0 10px;
 }
+
+.container {
+  max-width: 1070px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+
+// @media (max-width: 1200px) {}
+// @media (max-width: 1200px) {}
+// @media (max-width: 1200px) {}
+// @media (max-width: 1200px) {}
+// @media (max-width: 1200px) {}
+// @media (max-width: 1200px) {}
+// @media (max-width: 1200px) {}
+// @media (max-width: 1200px) {}

@@ -1,7 +1,8 @@
-$accent: #000;
-$default: #000;
-$title: #000;
-$bg: #000;
+$accent: #A259FF;
+$default: #fff;
+$title: #FFF;
+$bg: #2B2B2B;
+$bgcart: #3B3B3B;
 
 
 %roboto-400 {
@@ -17,4 +18,26 @@ $bg: #000;
 %roboto-700 {
   font-family: 'Roboto-Bold', sans-serif;
   font-weight: 700;
+}
+
+
+%sm-400 {
+  font-family: 'SpaceMono-Regular', sans-serif;
+  font-weight: 400;
+}
+
+%sm-700 {
+  font-family: 'SpaceMono-Bold', sans-serif;
+  font-weight: 700;
+}
+
+
+%ws-400 {
+  font-family: 'WorkSans-Regular', sans-serif;
+  font-weight: 400;
+}
+
+%ws-600 {
+  font-family: 'WorkSans-SemiBold', sans-serif;
+  font-weight: 600;
 }
