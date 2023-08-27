@@ -1,0 +1,173 @@
+.footer {
+  background: $bg;
+  color: $textsub;
+  &__inner {
+    padding: 40px 0;
+  }
+  &__top {
+    padding-bottom: 49px;
+    border-bottom: 1px solid $border;
+    display: flex;
+    justify-content: space-between;
+    &-text {
+      width: 243px;
+      margin-bottom: 20px;
+    }
+    &-info {
+      width: 330px;
+      margin-bottom: 20px;
+    }
+    &-form {
+      position: relative;
+      max-width: 420px;
+    }
+    &-input {
+      width: 100%;
+      height: 60px;
+      border-radius: 20px;
+      padding: 16px 191px 16px 20px;
+      outline: none;
+    }
+    &-btn {
+      color: #fff;
+      text-align: center;
+      @extend %ws-600;
+      font-size: 16px;
+      line-height: 140%;
+      color: $default;
+      position: absolute;
+      right: 1px;
+      top: 1px;
+      width: 177px;
+      height: 58px;
+      border-radius: 20px;
+      outline: none;
+      border: 1px solid $accent;
+      background: $accent;
+      &:hover {
+        color: $accent;
+        background: $default;
+      }
+      span{
+        display: none;
+      }
+    }
+    &-title {
+      color: $default;
+      @extend %sm-700;
+      font-size: 22px;
+      line-height: 160%; /* 35.2px */
+      text-transform: capitalize;
+      margin-bottom: 25px;
+    }
+    &-nav {
+      &-item {
+        margin-bottom: 20px;
+      }
+      &-link {
+        color: $textsub;
+        &:hover {
+          color: $accent;
+        }
+      }
+    }
+  }
+  &__social {
+    &-items {
+      display: flex;
+      gap: 10px;
+    }
+    &-link {
+      &:hover {
+        path {
+          fill: $accent;
+        }
+      }
+    }
+  }
+
+  &__bottom {
+    padding-top: 20px;
+    &-text {
+      color: $textsub;
+      @extend %ws-400;
+      font-size: 12px;
+      line-height: 110%; /* 13.2px */
+    }
+  }
+  .logo {
+    &__img {
+      width: 243px;
+      height: 32px;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@media (max-width: 834px) {
+  .footer {
+    &__inner {
+      padding: 40px 72px;
+    }
+    &__top {
+      display: block;
+      padding-bottom: 19px;
+    }
+    &__top {
+      &-text {
+        width: 100%;
+      }
+      &-info {
+        width: 100%;
+      }
+      &-item {
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .footer {
+    &__inner {
+      padding: 40px 10px;
+    }
+    &__top {
+      padding-bottom: 0;
+      &-form {
+        position: static;
+        width: 100%;
+      }
+      &-input {
+        width: 100%;
+        height: 46px;
+        padding: 16px 20px;
+        margin-bottom: 16px;
+      }
+      &-btn {
+        position: static;
+        width: 100%;
+        height: 46px;
+        padding-left: 32px;
+        position: relative;
+        cursor: pointer;
+        border: 1px solid $accent;
+        span {
+          position: absolute;
+          top: 55%;
+          transform: translateY(-50%);
+          left: 30%;
+        }
+        &:hover {
+          background: transparent;
+          border: 1px solid $accent;
+          span {
+            path {
+              fill: $accent;
+            }
+          }
+        }
+      }
+    }
+  }
+}

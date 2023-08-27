@@ -1,5 +1,6 @@
 .header {
   background: $bg;
+  // overflow: hidden;
   &__burger {
     display: none;
   }
@@ -34,9 +35,9 @@
       height: 60px;
       border-radius: 20px;
       background: $accent;
-      cursor: pointer;
       position: relative;
       padding-left: 32px;
+      cursor: pointer;
       border: 1px solid $accent;
       span {
         position: absolute;
@@ -72,7 +73,7 @@
       min-height: 100%;
       top: 54px;
       right: 0;
-      transform: translateX(200%);
+      transform: translateY(-200%);
       background: $bg;
       padding-top: 50px;
       @extend %ws-600;
@@ -95,38 +96,9 @@
       &-btn {
         font-size: 16px;
       }
-      // &-link {
-      //   color: #fff;
-      // }
-      // &-btn {
-      //   color: #fff;
-      //   width: 152px;
-      //   height: 60px;
-      //   border-radius: 20px;
-      //   background: $accent;
-      //   cursor: pointer;
-      //   position: relative;
-      //   padding-left: 32px;
-      //   border: 1px solid $accent;
-      //   span {
-      //     position: absolute;
-      //     left: 30px;
-      //     top: 55%;
-      //     transform: translateY(-50%);
-      //   }
-      //   &:hover {
-      //     background: transparent;
-      //     border: 1px solid $accent;
-      //     span {
-      //       path {
-      //         fill: $accent;
-      //       }
-      //     }
-      //   }
-      // }
     }
     &__inner {
-      padding: 15px 50px;
+      padding: 15px 30px;
     }
     &__burger {
       display: block;
@@ -152,7 +124,7 @@
 @media (max-width: 375px) {
   .header {
     &__inner {
-      padding: 15px 30px;
+      padding: 15px 10px;
     }
   }
 }
