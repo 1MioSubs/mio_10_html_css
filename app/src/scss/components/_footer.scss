@@ -37,6 +37,11 @@
       position: absolute;
       right: 1px;
       top: 1px;
+      &:hover {
+        .footer__btn-link{
+          color: $accent;
+        }
+      }
     }
     // &-btn {
     //   color: #fff;
@@ -157,7 +162,7 @@
       .btn {
         position: static;
         width: 100%;
-        height: 46px;               
+        height: 46px;
       }
     }
   }

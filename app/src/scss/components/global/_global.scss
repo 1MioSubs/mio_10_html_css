@@ -81,12 +81,9 @@ body {
   }
   &:hover {
     background: transparent;
-    .creators__btn-link {
-      // color: $accent;
-      span {
-        path {
-          fill: $accent;
-        }
+    span {
+      path {
+        fill: $accent;
       }
     }
   }
