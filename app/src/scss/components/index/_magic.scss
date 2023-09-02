@@ -110,6 +110,9 @@
       line-height: 110%; /* 13.2px */
     }
   }
+  &__mob-btn{
+    display: none;
+  }
 }
 
 @media (max-width: 834px) {
