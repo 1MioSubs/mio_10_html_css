@@ -29,32 +29,35 @@
     &-link {
       color: #fff;
     }
-    &-btn {
-      color: #fff;
+    .btn{
       width: 152px;
-      height: 60px;
-      border-radius: 20px;
-      background: $accent;
-      position: relative;
-      padding-left: 32px;
-      cursor: pointer;
-      border: 1px solid $accent;
-      span {
-        position: absolute;
-        left: 30px;
-        top: 55%;
-        transform: translateY(-50%);
-      }
-      &:hover {
-        background: transparent;
-        border: 1px solid $accent;
-        span {
-          path {
-            fill: $accent;
-          }
-        }
-      }
     }
+    // &-btn {
+    //   color: #fff;
+    //   width: 152px;
+    //   height: 60px;
+    //   border-radius: 20px;
+    //   background: $accent;
+    //   position: relative;
+    //   padding-left: 32px;
+    //   cursor: pointer;
+    //   border: 1px solid $accent;
+    //   span {
+    //     position: absolute;
+    //     left: 30px;
+    //     top: 55%;
+    //     transform: translateY(-50%);
+    //   }
+    //   &:hover {
+    //     background: transparent;
+    //     border: 1px solid $accent;
+    //     span {
+    //       path {
+    //         fill: $accent;
+    //       }
+    //     }
+    //   }
+    // }
   }
   .logo {
     &__img {
@@ -93,7 +96,8 @@
           border-bottom: 1px solid $accent;
         }
       }
-      &-btn {
+      .btn {
+        margin: 0 auto;
         font-size: 16px;
       }
     }

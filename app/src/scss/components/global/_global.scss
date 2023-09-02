@@ -58,6 +58,41 @@ body {
 }
 
 
+.btn {
+  width: 60px;
+  height: 60px;
+  border: 1px solid $accent;
+  border-radius: 20px;
+  padding-left: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $accent;
+  cursor: pointer;
+  &-link {
+    color: #fff;
+    position: relative;
+    span {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-45%);
+      left: -32px;
+    }
+  }
+  &:hover {
+    background: transparent;
+    .creators__btn-link {
+      // color: $accent;
+      span {
+        path {
+          fill: $accent;
+        }
+      }
+    }
+  }
+}
+
+
 // @media (max-width: 1200px) {}
 // @media (max-width: 1200px) {}
 // @media (max-width: 1200px) {}
