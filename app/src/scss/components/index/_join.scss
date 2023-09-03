@@ -1,0 +1,96 @@
+.join {
+  background: $bg;
+  &__sub {
+    background: $bgcart;
+    border-radius: 20px;
+    padding: 60px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 80px;
+    &-img {
+      width: 100%;
+      height: 310px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+      border-radius: 20px;
+    }
+    &-text {
+      margin-bottom: 40px;
+    }
+    &-info {
+      padding: 10px 0;
+    }
+    &-form {
+      width: 100%;
+      position: relative;
+    }
+    &-input {
+      width: 100%;
+      height: 60px;
+      padding: 16px 223px 16px 20px;
+      border-radius: 20px;
+    }
+    .btn {
+      @extend %ws-600;
+      font-size: 16px;
+      line-height: 140%;
+      width: 211px;
+      height: 58px;
+      position: absolute;
+      right: 1px;
+      top: 1px;
+      &:hover {
+        .join__btn-link {
+          color: $accent;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 834px) {
+  .join {
+    &__sub {
+      gap: 30px;
+      padding: 40px 30px;
+      &-img {
+        width: 100%;
+        height: 100%;
+      }
+      &-info {
+        padding: 0px 0;
+      }
+      &-form {
+        position: static;
+        width: 100%;
+      }
+      &-input {
+        width: 100%;
+        height: 46px;
+        padding: 16px 20px;
+        margin-bottom: 16px;
+      }
+      .btn {
+        position: static;
+        width: 100%;
+        height: 46px;
+      }
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .join {
+    &__sub {
+      display: block;
+      background: transparent;
+      padding: 0;
+      &-img {
+        width: 100%;
+        height: 255px;
+        margin-bottom: 30px;
+      }
+    }
+  }
+}

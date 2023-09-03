@@ -51,10 +51,10 @@
 
 @media (max-width: 375px) {
   .how {
-    &__items{
+    &__items {
       grid-template-columns: repeat(1, 1fr);
     }
-    &__item{
+    &__item {
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -62,7 +62,7 @@
       text-align: left;
       padding: 20px;
       width: 100%;
-      &-img{
+      &-img {
         width: 100px;
         height: 100px;
         margin: 0;
