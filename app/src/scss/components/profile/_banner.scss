@@ -1,0 +1,51 @@
+.banner {
+  height: 320px;
+  width: 100%;
+  background-image: url(../images/artist-fon.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  &__grad {
+    background: linear-gradient(180deg, rgba(162, 89, 255, 0) 0%, #a259ff 100%);
+    min-width: 100%;
+    min-height: 320px;
+  }
+  &__inner {
+    position: relative;
+    height: 320px;
+    padding-left: 300px;
+  }
+  &__avatar {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    left: 0;
+    bottom: -50px;
+  }
+}
+
+@media (max-width: 834px) {
+  .banner {
+    height: 280px;
+    &__inner {
+      height: 280px;
+    }
+    &__avatar {
+      left: 52px;
+    }
+  }
+}
+
+
+@media (max-width: 375px) {
+  .banner {
+    height: 250px;
+    &__inner {
+      height: 250px;
+    }
+    &__avatar {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}
