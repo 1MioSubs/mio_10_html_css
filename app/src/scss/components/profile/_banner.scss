@@ -13,7 +13,6 @@
   &__inner {
     position: relative;
     height: 320px;
-    padding-left: 300px;
   }
   &__avatar {
     width: 120px;
@@ -33,9 +32,11 @@
     &__avatar {
       left: 52px;
     }
+    &__grad {
+      min-height: 280px;
+    }
   }
 }
-
 
 @media (max-width: 375px) {
   .banner {
@@ -46,6 +47,9 @@
     &__avatar {
       left: 50%;
       transform: translateX(-50%);
+    }
+    &__grad {
+      min-height: 250px;
     }
   }
 }

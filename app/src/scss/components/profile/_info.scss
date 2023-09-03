@@ -1,0 +1,147 @@
+.info {
+  padding: 50px 0 0 0;
+  border-bottom: 1px solid #3b3b3b;
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    &-btn {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+    }
+    &-title {
+      @extend %ws-600;
+      font-size: 51px;
+      line-height: 110%; /* 56.1px */
+      text-transform: capitalize;
+    }
+  }
+  &__btn-one {
+    width: 186px;
+  }
+  &__btn-two {
+    width: 145px;
+  }
+  &__middle {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+    &-item {
+      max-width: 157px;
+      width: 100%;
+      &-title {
+        @extend %sm-700;
+        font-size: 28px;
+        line-height: 140%; /* 39.2px */
+        text-transform: capitalize;
+      }
+      &-subtitle {
+        @extend %ws-400;
+        font-size: 22px;
+        line-height: 160%; /* 35.2px */
+        text-transform: capitalize;
+      }
+    }
+  }
+  &__bio {
+    margin-bottom: 30px;
+    &-title {
+      color: #858584;
+      @extend %sm-700;
+      font-size: 22px;
+      line-height: 160%; /* 35.2px */
+      text-transform: capitalize;
+      margin-bottom: 10px;
+    }
+    &-text {
+      @extend %ws-400;
+      font-size: 22px;
+      line-height: 160%; /* 35.2px */
+      text-transform: capitalize;
+    }
+  }
+  &__link {
+    &-title {
+      color: #858584;
+      @extend %sm-700;
+      font-size: 22px;
+      line-height: 160%; /* 35.2px */
+      text-transform: capitalize;
+      margin-bottom: 10px;
+    }
+    &-items {
+      display: flex;
+      gap: 10px;
+    }
+    &-link {
+      &:hover {
+        path {
+          fill: $accent;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 834px) {
+  .info {
+    &__top {
+      display: block;
+      &-title {
+        margin-bottom: 30px;
+        font-size: 38px;
+        line-height: 120%; /* 56.1px */
+      }
+      &-btn {
+        justify-content: start;
+      }
+    }
+    &__middle {
+      &-item {
+        &-title {
+          font-size: 22px;
+          line-height: 160%;
+        }
+        &-subtitle {
+          font-size: 16px;
+          line-height: 140%; /* 35.2px */
+        }
+      }
+    }
+    &__bio {
+      &-title {
+        font-size: 16px;
+        line-height: 140%;
+      }
+      &-text {
+        font-size: 16px;
+        line-height: 140%;
+      }
+    }
+    &__link {
+      &-title {
+        font-size: 16px;
+        line-height: 140%;
+      }
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .info {
+    &__top {
+      &-btn {
+        display: block;
+      }
+    }
+    &__btn-one {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    &__btn-two {
+      width: 100%;
+    }
+  }
+}
