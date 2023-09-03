@@ -1,0 +1,136 @@
+.reg {
+  min-height: 691px;
+  &__inner {
+    display: flex;
+  }
+  &__img {
+    min-width: 50%;
+    height: 691px;
+    padding-right: 30px;
+    &-bg {
+      background-image: url(../images/avif/reg-fon.avif);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &__info {
+    max-width: 460px;
+    padding-left: 30px;
+    padding: 100px 0 0 30px;
+    &-title {
+      @extend %ws-600;
+      font-size: 51px;
+      line-height: 110%; /* 56.1px */
+      text-transform: capitalize;
+      margin-bottom: 20px;
+    }
+    &-text {
+      @extend %ws-400;
+      font-size: 22px;
+      line-height: 160%; /* 35.2px */
+      text-transform: capitalize;
+      margin-bottom: 40px;
+    }
+    &-input {
+      width: 330px;
+      height: 46px;
+      padding: 16px 20px 16px 52px;
+      border-radius: 20px;
+      margin-bottom: 15px;
+      display: block;
+      outline: none;
+    }
+    &-input-wrapper {
+      position: relative;
+      &::before {
+        content: "";
+        width: 20px;
+        height: 20px;
+        left: 20px;
+        top: 13px;
+        position: absolute;
+        background-image: url(../images/reg-form/lock-key.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+      }
+      &:nth-child(1)::before {
+        background-image: url(../images/reg-form/user.svg);
+      }
+      &:nth-child(2)::before {
+        background-image: url(../images/reg-form/mail.svg);
+      }
+    }
+    &-btn {
+      margin: 0;
+      padding: 0;
+      border: none;
+      background: transparent;
+    }
+  }
+  &__btn {
+    width: 330px;
+    height: 46px;
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 834px) {
+  .reg {
+    min-height: 615px;
+    &__img {
+      min-width: 50%;
+      height: 615px;
+      padding-right: 20px;
+    }
+    &__info {
+      max-width: 325px;
+      padding-left: 30px;
+      padding: 80px 0 0 20px;
+      &-input {
+        width: 100%;
+      }
+      &-btn {
+        width: 100%;
+      }
+      &-title {
+        font-size: 38px;
+        line-height: 120%; /* 56.1px */
+        margin-bottom: 20px;
+      }
+      &-text {
+        font-size: 16px;
+        line-height: 140%; /* 35.2px */
+      }
+    }
+    &__btn {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .reg {
+    &__inner {
+      display: block;
+    }
+    &__img {
+      width: 100%;
+      height: 232px;
+      padding-right: 0;
+      margin-bottom: 30px;
+    }
+    &__info{
+      padding: 0;
+      margin: 0;
+      max-width: 100%;
+      padding: 0 20px;
+    }
+    &__btn {
+      margin-bottom: 40px;
+    }
+  }
+}
