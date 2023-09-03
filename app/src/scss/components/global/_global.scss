@@ -57,7 +57,6 @@ body {
   padding: 0 10px;
 }
 
-
 .btn {
   width: 60px;
   height: 60px;
@@ -89,6 +88,45 @@ body {
   }
 }
 
+.title {
+  @extend %ws-600;
+  font-size: 38px;
+  line-height: 120%; /* 45.6px */
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+
+.sub-title {
+  @extend %ws-400;
+  font-size: 22px;
+  line-height: 160%; /* 35.2px */
+  text-transform: capitalize;
+}
+
+.main-padding {
+  padding: 80px 0;
+}
+
+@media (max-width: 834px) {
+  .title {
+    font-size: 28px;
+    line-height: 140%; /* 39.2px */
+  }
+
+  .sub-title {
+    font-size: 16px;
+    line-height: 140%; /* 22.4px */
+  }
+  .main-padding {
+    padding: 40px 52px;
+  }
+}
+
+@media (max-width: 375px) {
+  .main-padding {
+    padding: 40px 10px;
+  }
+}
 
 // @media (max-width: 1200px) {}
 // @media (max-width: 1200px) {}
