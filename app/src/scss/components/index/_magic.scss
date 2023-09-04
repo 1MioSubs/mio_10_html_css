@@ -65,51 +65,7 @@
       }
     }
   }
-  &__clok {
-    width: 295px;
-    height: 140px;
-    border-radius: 20px;
-    background: rgba(59, 59, 59, 0.5);
-    backdrop-filter: blur(5px);
-    padding: 30px;
-    &-title {
-      @extend %sm-400;
-      font-size: 12px;
-      line-height: 110%; /* 13.2px */
-      margin-bottom: 10px;
-    }
-    &-tik {
-      @extend %sm-700;
-      font-size: 28px;
-      // line-height: 100%; /* 39.2px */
-      text-transform: capitalize;
-      display: flex;
-      align-items: center;
-      margin-bottom: 5px;
-      display: flex;
-      justify-content: space-between;
-      span {
-        font-size: 38px;
-        line-height: 120%; /* 45.6px */
-      }
-    }
-    &-hours {
-      padding-right: 14px;
-    }
-    &-minutes {
-      padding: 0 14px;
-    }
-    &-seconds {
-      padding-left: 14px;
-    }
-    &-name {
-      display: flex;
-      justify-content: space-between;
-      @extend %sm-400;
-      font-size: 12px;
-      line-height: 110%; /* 13.2px */
-    }
-  }
+  
   &__mob-btn{
     display: none;
   }
@@ -143,7 +99,7 @@
     &__info{
       display: block;
     }
-    &__clok{
+    .clok{
       width: 100%;
       margin-bottom: 30px;
     }

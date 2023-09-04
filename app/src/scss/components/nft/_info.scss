@@ -1,0 +1,242 @@
+.info {
+  &__inner {
+    padding: 40px 0 20px;
+  }
+  &__title {
+    @extend %ws-600;
+    font-size: 51px;
+    line-height: 110%; /* 56.1px */
+    text-transform: capitalize;
+    margin-bottom: 10px;
+  }
+  &__subtitle {
+    color: #858584;
+    @extend %ws-400;
+    font-size: 22px;
+    line-height: 160%; /* 35.2px */
+    text-transform: capitalize;
+  }
+  .clok {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #3b3b3b;
+    backdrop-filter: none;
+    &__name {
+      margin-bottom: 30px;
+    }
+  }
+  &__des {
+    position: relative;
+    &-item {
+      max-width: 605px;
+      margin-bottom: 30px;
+    }
+    &-title {
+      color: #858584;
+      @extend %sm-700;
+      font-size: 22px;
+      line-height: 160%; /* 35.2px */
+      text-transform: capitalize;
+      margin-bottom: 10px;
+    }
+    &-author {
+      color: #fff;
+      position: relative;
+      padding-left: 36px;
+      font-size: 22px;
+      @extend %ws-600;
+      line-height: 140%; /* 30.8px */
+      text-transform: capitalize;
+      span {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        left: 0;
+        top: 0;
+      }
+    }
+    &-text {
+      @extend %ws-400;
+      font-size: 22px;
+      line-height: 160%; /* 35.2px */
+      margin-bottom: 40px;
+    }
+    &-item-box {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+    }
+    &-tags {
+      color: #fff;
+      padding: 12px 30px;
+      @extend %ws-600;
+      font-size: 16px;
+      line-height: 140%; /* 22.4px */
+      text-transform: uppercase;
+      border-radius: 18px;
+      background: $bgcart;
+      border: none;
+    }
+    &-link {
+      display: block;
+      color: #fff;
+      @extend %ws-400;
+      font-size: 22px;
+      line-height: 160%; /* 35.2px */
+      position: relative;
+      padding-left: 42px;
+      &:nth-child(1n) {
+        margin-bottom: 10px;
+      }
+      &:nth-last-child(1) {
+        margin-bottom: 0;
+      }
+      span {
+        position: absolute;
+        width: 32px;
+        height: 32px;
+        top: 0;
+        left: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 834px) {
+  .info {
+    &__inner {
+      padding: 40px 52px 10px;
+    }
+    &__title {
+      font-size: 38px;
+      line-height: 120%; /* 56.1px */
+    }
+    &__subtitle {
+      font-size: 16px;
+      line-height: 140%; /* 35.2px */
+    }
+    &__des {
+      &-item {
+        max-width: 365px;
+        margin-bottom: 30px;
+      }
+      &-title {
+        font-size: 16px;
+        line-height: 140%; /* 35.2px */
+      }
+      &-author {
+        font-size: 16px;
+        line-height: 140%; /* 30.8px */
+        span {
+          top: -4px;
+        }
+      }
+      &-text {
+        font-size: 16px;
+        line-height: 140%; /* 35.2px */
+        margin-bottom: 30px;
+      }
+      &-link {
+        display: block;
+        color: #fff;
+        @extend %ws-400;
+        font-size: 16px;
+        line-height: 140%; /* 35.2px */
+        position: relative;
+        padding-left: 42px;
+        &:nth-child(1n) {
+          margin-bottom: 10px;
+        }
+        &:nth-last-child(1) {
+          margin-bottom: 0;
+        }
+        span {
+          position: absolute;
+          transform: scale(80%);
+          width: 32px;
+          height: 32px;
+          top: -5px;
+          left: 0;
+        }
+      }
+      &-item-box {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 18px;
+      }
+      &-tags {
+        color: #fff;
+        padding: 12px 30px;
+        @extend %ws-600;
+        font-size: 16px;
+        line-height: 140%; /* 22.4px */
+        text-transform: uppercase;
+        border-radius: 18px;
+        background: $bgcart;
+        border: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 788px) {
+  .info {
+    &__inner {
+      padding: 40px 10px 10px;
+    }
+    &__title {
+      font-size: 28px;
+      line-height: 140%; /* 56.1px */
+    }
+    &__des {
+      &-item {
+        max-width: 100%;
+        margin-bottom: 30px;
+      }
+    }
+    .clok {
+      // width: 100%;
+      position: static;
+      background: #3b3b3b;
+      backdrop-filter: none;
+      margin-bottom: 30px;
+      &__name {
+        margin-bottom: 30px;
+      }
+      &__tik {
+        font-size: 24px;
+        span {
+          font-size: 32px;
+          line-height: 120%; /* 45.6px */
+        }
+      }
+      &__hours {
+        padding-right: 14px;
+      }
+      &__minutes {
+        padding: 0 14px;
+      }
+      &__seconds {
+        padding-left: 14px;
+      }
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .info {
+    .clok {
+      width: 100%;
+      &__tik {
+        font-size: 20px;
+        span {
+          font-size: 26px;
+        }
+      }
+    }
+  }
+}
