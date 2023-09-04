@@ -1,0 +1,19 @@
+.nft {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  min-width: 100%;
+  min-height: 560px;
+}
+
+@media (max-width: 834px) {
+  .nft {
+    min-height: 420px;
+  }
+}
+
+@media (max-width: 375px) {
+  .nft {
+    min-height: 320px;
+  }
+}
