@@ -1,0 +1,28 @@
+.tabs-mar {
+  &__inner {
+    padding: 0 0;
+  }
+  .tabs{
+    display: flex;
+    justify-content: space-around;
+    &__item{
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 834px) {
+  .tabs-mar {
+    &__inner {
+      padding: 0 52px;
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .tabs-mar {
+    &__inner {
+      padding: 0 10px;
+    }
+  }
+}

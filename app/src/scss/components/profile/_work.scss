@@ -1,39 +1,4 @@
 .work {
-  &__tabs {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    text-align: center;
-    padding-top: 10px;
-    &-item {
-      padding: 15px 0;
-      color: #858584;
-      @extend %ws-600;
-      font-size: 22px;
-      line-height: 140%; /* 30.8px */
-      text-transform: capitalize;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      span {
-        margin-left: 16px;
-        color: #fff;
-        padding: 5px 10px;
-        border-radius: 20px;
-        background: #3b3b3b;
-        text-align: center;
-        @extend %sm-400;
-        font-size: 16px;
-        line-height: 140%; /* 22.4px */
-      }
-      &-active {
-        color: #fff;
-        border-bottom: 2px solid #858584;
-        span {
-          background: #858584;
-        }
-      }
-    }
-  }
   &__content {
     background: $bgcart;
   }
@@ -48,6 +13,8 @@
   }
 }
 
+
+
 @media (max-width: 834px) {
   .work {
     &__content-tabs {
@@ -59,7 +26,7 @@
       &-item {
         padding: 15px 0;
         font-size: 16px;
-        line-height: 140%; 
+        line-height: 140%;
         span {
           padding: 5px 10px;
           font-size: 12px;
@@ -69,7 +36,7 @@
     }
     &__cart {
       display: none;
-      &:nth-child(-n + 6){
+      &:nth-child(-n + 6) {
         display: block;
       }
     }
@@ -85,13 +52,13 @@
     }
     &__cart {
       margin: 0 auto;
-      &:nth-child(4){
+      &:nth-child(4) {
         display: none;
       }
-      &:nth-child(5){
+      &:nth-child(5) {
         display: none;
       }
-      &:nth-child(6){
+      &:nth-child(6) {
         display: none;
       }
     }

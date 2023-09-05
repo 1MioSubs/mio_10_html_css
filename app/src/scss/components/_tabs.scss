@@ -1,0 +1,84 @@
+.tabs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+  padding-top: 10px;
+  &__item {
+    padding: 15px 0;
+    color: #858584;
+    @extend %ws-600;
+    font-size: 22px;
+    line-height: 140%; /* 30.8px */
+    text-transform: capitalize;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &-active {
+      color: #fff;
+      border-bottom: 2px solid #858584;
+      .tabs__item-span-num {
+        background: #858584;
+      }
+    }
+    &-span-num {
+      margin-left: 16px;
+      color: #fff;
+      padding: 5px 10px;
+      border-radius: 20px;
+      background: #3b3b3b;
+      text-align: center;
+      @extend %sm-400;
+      font-size: 16px;
+      line-height: 140%; /* 22.4px */
+    }
+    &-span-two{
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 834px) {
+  .tabs {
+    &__item {
+      padding: 15px 0;
+      font-size: 16px;
+      line-height: 140%;
+      &-span-num {
+        padding: 5px 10px;
+        font-size: 12px;
+        line-height: 140%; /* 22.4px */
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .tabs {
+    &__item {
+      &-span-num {
+        display: none;
+      }
+    }
+  }
+}
+
+
+
+
+// <div class="tabs">
+//   <div class="tabs__item tabs__item-active">
+//     <span class="tabs__item-span-one">Created</span>
+//     <span class="tabs__item-span-two">302</span>
+//     <span class="tabs__item-span-num">302</span>
+//   </div>
+//   <div class="tabs__item">
+//     <span class="tabs__item-span-one">owned</span>
+//     <span class="tabs__item-span-two">67</span>
+//     <span class="tabs__item-span-num">67</span>
+//   </div>
+//   <div class="tabs__item">
+//     <span class="tabs__item-span-one">Collection</span>
+//     <span class="tabs__item-span-two">4</span>
+//     <span class="tabs__item-span-num">4</span>
+//   </div>
+// </div>

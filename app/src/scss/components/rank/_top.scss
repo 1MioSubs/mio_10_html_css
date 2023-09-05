@@ -1,0 +1,49 @@
+.top {
+  &__inner {
+    padding: 80px 0;
+  }
+  &__title {
+    color: #fff;
+    @extend %ws-600;
+    font-size: 51px;
+    line-height: 110%; /* 56.1px */
+    text-transform: capitalize;
+    margin-bottom: 10px;
+  }
+  &__subtitle {
+    align-self: stretch;
+    color: #fff;
+    @extend %ws-400;
+    font-size: 22px;
+    line-height: 160%; /* 35.2px */
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 834px) {
+  .top {
+    &__inner {
+      padding: 60px 52px;
+    }
+    &__title {
+      font-size: 38px;
+      line-height: 120%;
+    }
+    &__subtitle {
+      font-size: 16px;
+      line-height: 140%;
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .top {
+    &__inner {
+      padding: 40px 10px;
+    }
+    &__title {
+      font-size: 28px;
+      line-height: 140%;
+    }
+  }
+}
